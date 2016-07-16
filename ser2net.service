@@ -1,0 +1,10 @@
+[Unit]
+Description=ser2net
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/sbin/ser2net -c /etc/ser2net.conf
+
+[Install]
+WantedBy=multi-user.target
